@@ -44,7 +44,9 @@ body {
   padding: 0;
   font-family: var(--font-primary);
   background: linear-gradient(125deg, #e6f7ff 25%, #ffffff 50%, #e6f7ff 75%);
-  overflow: hidden;
+  /* scroll vertical */
+  overflow-x: hidden;
+  overflow-y: scroll
 }
 
 section {
@@ -113,6 +115,26 @@ nav ul li a {
   transition-delay: 0s;
 }
 
+/*  Tablet View */
+/* Viewport: 1024x1366 Screen size: 12.9" Monitor size: 15.4" ipad pro */
+/* Viewport: 768x1024 Screen size: 7.9" Monitor size: 15.4" ipad mini */
+
+
+
+/* Mobile View */
+/* Viewport: 375x812 Screen size: 5.8" Monitor size: 15.4" */
+
+@media (max-width: 768px) {
+  nav ul.menu {
+    display: block;
+    margin-top: 35px;
+    margin-right: -51px;
+  }
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+}
 
 /***************************************************************************************
 ************************************  HOME SECTION  ************************************
