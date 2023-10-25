@@ -824,6 +824,18 @@ nav ul li a {
   h3.team-title2 {
     font-size: 2rem;
   }
+
+  #team .card, #team .card2 {
+    color: #138a39;
+    top: 50%;
+    left: 30%;
+    width: 200px;
+    height: 300px;
+  }
+
+  .bubble-container {
+    width: 50%;
+  }
 }
 
 /* Background Logo */
