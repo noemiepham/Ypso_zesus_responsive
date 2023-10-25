@@ -171,13 +171,15 @@ nav ul li a {
 
 .slider {
   height: 80px;
-  padding-left: 20px;
+/*   padding-left: 20px; */
   overflow: hidden;
+  text-align: center;
 }
 
 .slider div {
-  text-align: center;
+ align-items: center;
   height: 100%;
+  width: 100%;
   margin-bottom: 80px;
   padding: 2px 20px;
   box-sizing: border-box;
@@ -185,7 +187,6 @@ nav ul li a {
 .slider div span {
     display: inline-block;
     height: 100%;
-    margin-top: 10px;
 }
 
 .slider-text1 {
@@ -205,10 +206,10 @@ nav ul li a {
 
 @media (max-width: 768px) {
   .slider-wrapper {
-    font-size: 40px;
+    font-size: 30px;
   }
-  .slider div span {
-    margin-top: 15px;
+   .slider div span {
+    margin-top: 20px;
 }
 }
 @keyframes slide {
@@ -308,13 +309,13 @@ nav ul li a {
   background-color: rgba(48, 108, 247, 0.8);
 }
 
-#home .subtitle-home {
+/* #home .subtitle-home {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-
+ */
 
 #home .list {
   font-family: var(--font-secondary);
