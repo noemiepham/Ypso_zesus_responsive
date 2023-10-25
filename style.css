@@ -38,12 +38,16 @@ h1, h2, h3, h4, h5, h6, p, span, i {
   margin: 0;
   padding: 0;
 }
-html {
 
+html {
+  width: 100%;
+  height: 100%;
 }
+
 body {
   width: 100%;
-  min-height: 100vh; /* viewport height image */
+  min-height: 100vh;
+  /* viewport height image */
 
   /* scroll vertical */
   overflow-x: hidden;
@@ -51,7 +55,6 @@ body {
 }
 
 section {
-  padding: 20px;
   width: 100%;
   min-height: 100vh;
 }
@@ -126,6 +129,7 @@ nav ul li a {
   body {
     overflow-x: hidden;
   }
+
   nav ul.menu {
     display: block;
     margin-top: 35px;
@@ -171,22 +175,23 @@ nav ul li a {
 
 .slider {
   height: 80px;
-/*   padding-left: 20px; */
+  /*   padding-left: 20px; */
   overflow: hidden;
   text-align: center;
 }
 
 .slider div {
- align-items: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   margin-bottom: 80px;
   padding: 2px 20px;
   box-sizing: border-box;
 }
+
 .slider div span {
-    display: inline-block;
-    height: 100%;
+  display: inline-block;
+  height: 100%;
 }
 
 .slider-text1 {
@@ -208,10 +213,12 @@ nav ul li a {
   .slider-wrapper {
     font-size: 30px;
   }
-   .slider div span {
+
+  .slider div span {
     margin-top: 20px;
+  }
 }
-}
+
 @keyframes slide {
   0% {
     margin-top: -480px;
@@ -240,7 +247,7 @@ nav ul li a {
   100% {
     margin-top: 0px;
   }
-} 
+}
 
 /* @media (max-width: 900px) {
   .slider-wrapper {
@@ -289,7 +296,7 @@ nav ul li a {
   font-size: 80px;
 }
 
-#home .title-home .YP{
+#home .title-home .YP {
   color: var(--color-third);
   margin-right: 5px;
 }
@@ -363,7 +370,7 @@ nav ul li a {
 /* Grid Container */
 #junior {
   position: relative;
-  /* display: grid; */
+  display: grid;
   align-items: center;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -389,19 +396,25 @@ nav ul li a {
   margin: 40px;
 }
 
+.image-wrapper {
+  display: none;
+  position: relative;
+}
 
-/* Mobile View */
+/* Mobile View section junio */
 /* Viewport: 375x812 Screen size: 5.8" Monitor size: 15.4" */
 
 @media (max-width: 768px) {
-  #junior {
+
+  section#junior {
     display: block;
+    width: 100%;
   }
 
   .counters {
-    padding: 0;
-    margin: 0 40px 0 40px;
-    font-size: ;
+    margin: 0 5px 0 5px;
+    font-size: 2.5rem;
+    background-color: rgba(128, 128, 128, 0.258);
   }
 
   span.counter-number-left {
@@ -409,15 +422,16 @@ nav ul li a {
   }
 
   .column {
+    margin-top: 40px;
     width: 100%;
+    background-color: rgba(128, 128, 128, 0.258);
+
   }
 
   .column .typing-effect {
     display: flex;
     margin: 20px 0 0 0;
-    font-size: 7.6vw;
-    ;
-    bo
+    font-size: 1.5rem;
   }
 
   .column .typing-effect span {
@@ -429,8 +443,10 @@ nav ul li a {
   }
 
   .column.right-column p {
-    font-size: 3.3vw;
+    font-size: 1rem;
     margin-right: 10px;
+    color: (var(--color-primary));
+
   }
 }
 
@@ -449,17 +465,17 @@ nav ul li a {
   font-weight: 700;
 }
 
-.counter-number-left {
+.color-third {
   color: var(--color-third);
 }
 
-.counter-number-right {
+.color-primary {
   color: var(--color-primary);
 }
 
 .counter-label-left,
 .counter-label-right {
-  font-size: 1vw;
+  font-size: 0.5rem;
   margin-top: 10px;
 }
 
@@ -559,15 +575,33 @@ nav ul li a {
 
 /* Services Main Container */
 #services {
-  height: auto;
+  width: 100%;
+  height: 100%;
   position: relative;
-  padding: 60px;
+  /*   padding: 60px; */
   background:
     linear-gradient(95deg,
       #138a39 -70%,
       var(--color-primary) 50%,
       var(--color-third) 50%,
       var(--color-third) 100%);
+}
+
+/* ----------Responsive Services title ----- */
+@media (max-width: 768px) {
+
+  /* reszie titles text */
+  .section_title h2.text-titles {
+    font-size: 2.5rem;
+  }
+
+  /* resize paragrape text */
+  .section_title p.text-paragarap {
+    font-size: 1rem;
+    margin: 10px;
+    padding: 0;
+    justify-content: normal;
+  }
 }
 
 /* Section Title & Logo */
@@ -645,7 +679,33 @@ nav ul li a {
   border-radius: 10px;
 }
 
-/* Service style in even-numbered position for reverse rotation */
+/* ----------Responsive Services Card ----- */
+@media (max-width: 768px) {
+
+  /* Service Cards */
+  .services-card {
+    margin-top: 10px;
+  }
+
+  .services-card .service {
+    width: 40%;
+    margin: 15px;
+    padding: 14px 0 15px 0;
+  }
+  .service .fa-globe {
+    font-size: 2rem;
+  }
+  .service h4.title-card {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+    .service p.description {
+      font-size: 1rem;
+  }
+}
+
+/* ----------Responsive Services Card ----- *}/* Service style in even-numbered position for reverse rotation */
 .service:nth-child(even) {
   transform: rotate(5deg);
 }
