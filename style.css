@@ -694,16 +694,18 @@ nav ul li a {
     margin: 15px;
     padding: 14px 0 15px 0;
   }
+
   .service .fa-globe {
     font-size: 2rem;
   }
+
   .service h4.title-card {
     font-size: 1rem;
     margin-bottom: 10px;
   }
 
-    .service p.description {
-      font-size: 1rem;
+  .service p.description {
+    font-size: 1rem;
   }
 }
 
@@ -812,6 +814,17 @@ nav ul li a {
   text-shadow: 1px 1px 4px var(--color-primary), 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+/* ----------Responsive Team titles----- */
+@media (max-width: 768px) {
+  h2.team-title {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+
+  h3.team-title2 {
+    font-size: 2rem;
+  }
+}
 
 /* Background Logo */
 .bg-logo {
