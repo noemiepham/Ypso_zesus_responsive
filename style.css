@@ -1658,6 +1658,71 @@ nav ul li a {
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
+/* responsive page contact */
+@media (max-width: 760px) {
+.content-wrapper {
+  display: block;
+}
+.content-wrapper .left-content{
+ gap: 0;
+}
+.content-wrapper .left-content h1 {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px var(--color-primary), 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+.button-container {
+  gap: 10px;
+}
+.button-container .button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  width: 150px;
+  box-shadow: 1px 1px 4px var(--color-primary);
+  text-shadow: 1px 1px 4px var(--color-primary), 1px 1px 1px rgba(0, 0, 0, 0.2);
+  
+}
+.content-wrapper .right-content {
+  margin-top: 50px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+.content-wrapper .right-content h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--color-third);
+  text-shadow: 1px 1px 4px var(--color-primary), 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.content-wrapper .right-content form { 
+  color: var(--color-third);
+  text-shadow: 1px 1px 4px var(--color-primary), 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+}
+#contact input {
+  width: 100%;
+  height: 40px;
+}
+#contact .input-group {
+  margin-bottom: 10px;
+}
+#contact textarea {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+}
+.submit-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.submit-container button{
+  box-shadow: 1px 1px 4px var(--color-third);
+}
+}
 
 
 /***************************************************************************************
