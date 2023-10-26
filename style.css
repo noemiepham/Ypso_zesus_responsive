@@ -30,7 +30,7 @@
 }
 
 h1, h2, h3, h4, h5, h6, p, span, i {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
 }
 
 * {
@@ -416,38 +416,44 @@ nav ul li a {
   .counters {
     margin: 0 5px 0 5px;
     font-size: 2.5rem;
-    background-color: rgba(128, 128, 128, 0.258);
+    text-shadow: 1px 1px 4px var(--color-primary), 1px 1px 1px rgba(0, 0, 0, 0.2);
+    /*     background-color: rgba(128, 128, 128, 0.258); */
   }
 
-  span.counter-number-left {
-    font-size: 4.4vw;
+  span.counter-number-left, span.counter-number-right {
+    font-size: 25px;
   }
 
   .column {
     margin-top: 40px;
+    padding: 0;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.258);
+    /*     background-color: rgba(128, 128, 128, 0.258); */
+    text-shadow: 1px 1px 4px var(--color-primary), 1px 1px 1px rgba(0, 0, 0, 0.2);
 
   }
 
   .column .typing-effect {
     display: flex;
-    margin: 20px 0 0 0;
-    font-size: 1.5rem;
+    margin: 20px 0 20px 0;
+    letter-spacing: 0;
   }
 
   .column .typing-effect span {
     margin: 5px;
+    font-size: 2rem;
   }
 
   .column .typing-effect-2 {
-    font-size: 5vw;
+    font-size: 1rem;
+
   }
 
   .column.right-column p {
     font-size: 1rem;
     margin-right: 10px;
     color: (var(--color-primary));
+    text-shadow: 1px 1px 4px var(--color-primary), 1px 1px 1px rgba(0, 0, 0, 0.2);
 
   }
 }
@@ -818,11 +824,11 @@ nav ul li a {
 @media (max-width: 768px) {
   h2.team-title {
     margin-top: 20px;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   h3.team-title2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   #team .card, #team .card2 {
@@ -1030,6 +1036,28 @@ nav ul li a {
       var(--color-third) 100%);
 }
 
+/* ----------Responsive Parternaire titles----- */
+@media (max-width: 768px) {
+  section#partenaire h2 {
+    font-size: 1.5rem;
+  }
+
+  section#partenaire h3 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .item-partner {
+    width: 100px;
+    height: 100px;
+  }
+
+  p.quote {
+    font-size: 1.5rem;
+    padding: 100px 15px;
+  }
+}
+
 /* Partenaire Titles */
 #partenaire h2, #partenaire h3 {
   color: var(--color-primary);
@@ -1216,6 +1244,63 @@ nav ul li a {
       var(--color-primary) 50%,
       var(--color-third) 50%,
       var(--color-third) 100%);
+}
+
+/* ----------Responsive Portfolio titles----- */
+/* tablet */
+@media (max-width: 768px){
+  section#portfolio .portfolio-title {
+    transform: none;
+    text-shadow: 1px 1px 4px var(--color-primary), 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+  }
+
+  section#portfolio .portfolio-subtitle {
+    width: 100%;
+    transform: none;
+    font-size: 1rem;
+    line-height: 2rem;
+    box-sizing: border-box;
+  }
+
+  section#portfolio .portfolio-subtitle p {
+    margin-top: 10px;
+  }
+
+  .portfolio-slider .portfolio-item {
+    width: 150px;
+    height: 150px;
+    left: calc(130% - 370px);
+    margin-top: 50px;
+  }
+
+  button#portfolio-prev {
+    left: 10px;
+    top: 40%;
+  }
+  button#portfolio-next {
+    right: 10px;
+    top: 40%;
+  }
+  .portfolio-item-text {
+    display: none;
+}
+.portfolio-slider .portfolio-item {
+  width: 200px;
+  height: 200px;
+  left: calc(90% - 370px);
+  margin-top: 10px;
+}
+
+}
+/* Mobile */
+@media (max-width: 400px) {
+  .portfolio-slider .portfolio-item {
+    width: 150px;
+    height: 150px;
+    left: calc(130% - 370px);
+    margin-top: 50px;
+  }
 }
 
 /* Title and Subtitle */
